@@ -2,3 +2,30 @@
 @model galvistons_goblets.Pages.Products.IndexModel
 @{
 }
+
+<br />
+<h2>List of Products</h2>
+<a class="btn btn-primary btn-sm" href="/Products/Create">New Product</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>SKU</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.listProducts)
+        {
+            <tr>
+                <td>@item.name</td>
+                <td>@item.description</td>
+                <td>@item.SKU</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Products/Edit?id=@item.id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Products/Delete?id=@item.id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
