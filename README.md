@@ -2,7 +2,8 @@
 An ASP.NET Core application that works with a Microsoft SQL Server to display CRUD operations for a fictional business.
 
 ## What actually is this?
-A .NET core app that I, shawn-coding, found online. It is a tutorial on YouTube provided by the channel BoostMyTool on May 13, 2022:
+A .NET core app that I, shawn-coding, found online. It is a tutorial on YouTube provided by the channel BoostMyTool on May 13, 2022. I followed along to get the basic
+workflow and created this repo from my work.
 
 [Link to the video](https://youtu.be/T-e554Zt3n4)
 
